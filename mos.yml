@@ -1,0 +1,21 @@
+author: mongoose-os
+name: arduino-adafruit-ssd1306
+description: Arduino Adafruit SSD1306 app
+# arch: PLATFORM
+version: 1.0
+skeleton_version: 2017-05-18
+sources:
+  - src
+filesystem:
+  - fs
+libs:
+  - origin: https://github.com/mongoose-os-libs/mjs
+  - origin: https://github.com/mongoose-os-libs/arduino-adafruit-ssd1306
+tags:
+  - js
+  - arduino-adafruit-ssd1306
+config_schema:
+  - ["i2c.enable", true]
+build_vars:
+  MGOS_ENABLE_I2C: 1
+  MGOS_ENABLE_SPI: 1
