@@ -3,6 +3,7 @@ description: Adafruit SSD1306 usage example (JavaScript)
 version: 1.0
 
 libs_version: ${mos_version}
+modules_version: ${mos_version}
 mongoose_os_version: ${mos_version}
 
 sources:
