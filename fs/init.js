@@ -26,7 +26,7 @@ let showStr = function(d, str) {
   d.display();
 };
 
-Timer.set(1000 /* milliseconds */, true /* repeat */, function() {
+Timer.set(1000 /* milliseconds */, Timer.REPEAT, function() {
   showStr(d, "i = " + JSON.stringify(i));
   print("i = ", i);
   i++;
